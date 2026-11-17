@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo-img {
+  width: 80px !important;
+  height: auto !important;
+}
+.logo {
+  width: 75px;
+  filter: drop-shadow(0 0 10px rgba(124, 92, 255, 0.25));
+  height: auto;
+  display: block;
+
+  object-fit: contain;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.3rem 0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
